@@ -22,7 +22,7 @@ Output:
 7. Evaluate the classifier's accuracy using the accuracy_score function from scikit-learn.
 
 ## Program:
-''' 
+~~~
 import numpy as np
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
@@ -46,10 +46,10 @@ y_pred=clf.predict(X_test)
 accu = accuracy_score(y_test, y_pred)
 print("Accuracy:",accu)
 
-''' 
+~~~
 
 ## Output:
-''' Outpu![acccuracy](https://github.com/ragul-2004/Bayes-Classifier/assets/94367917/5afee748-f940-4d6b-b869-f7d28eb4af0c)
+![acccuracy](https://github.com/ragul-2004/Bayes-Classifier/assets/94367917/5afee748-f940-4d6b-b869-f7d28eb4af0c)
 
 ## Result:
 Hence, Bayes classifier for iris dataset is implemented successfully
