@@ -39,17 +39,17 @@ class BayesClassifier:
   def predict(self, X):
     return self.clf.predict(X)
 ir = load_iris()
-X_train, X_test, y_train, y_test = train_test_split(ir.data, ir.target,test_size=0.3, random_state = 33)
+X_train, X_test, y_train, y_test = train_test_split(ir.data, ir.target,test_size=0.3, random_state = 42 )
 clf = BayesClassifier()
 clf.fit(X_train,y_train)
 y_pred=clf.predict(X_test)
 accu = accuracy_score(y_test, y_pred)
-print("Accuracy:",accu)
+print("Accuracy:",accu*100)
 
 ~~~
 
 ## Output:
-![acccuracy](https://github.com/ragul-2004/Bayes-Classifier/assets/94367917/5afee748-f940-4d6b-b869-f7d28eb4af0c)
+![Screenshot 2023-08-31 093938](https://github.com/ragul-2004/Bayes-Classifier/assets/94367917/4cb39837-e0e5-4b74-8527-3258578bb17d)
 
 ## Result:
 Hence, Bayes classifier for iris dataset is implemented successfully
